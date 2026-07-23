@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mes créations — Nekotsuki Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo-lockup">
+      <img src="logo-icon.png" alt="Nekotsuki Studio">
+      <span class="logo-text">Nekotsuki<small>STUDIO</small></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="apropos.html">À propos</a></li>
+      <li><a href="creations.html" class="active">Mes créations</a></li>
+      <li><a href="boutique.html">Boutique</a></li>
+      <li><a href="commissions.html">Commissions</a></li>
+      <li><a href="stream.html">Le coin stream</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main>
+  <div class="page-header">
+    <div class="container">
+      <a href="index.html" class="back-link">← Retour à l'accueil</a>
+    </div>
+  </div>
+
+  <section id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Portfolio</span>
+        <h2>Mes créations</h2>
+        <p>Une sélection de mes travaux récents.</p>
+      </div>
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">Tout</button>
+        <button class="filter-btn" data-filter="perso">Perso</button>
+        <button class="filter-btn" data-filter="fanart">Fanart</button>
+        <button class="filter-btn" data-filter="commission">Commissions</button>
+      </div>
+      <!--
+        POUR AJOUTER TES VRAIES IMAGES :
+        Remplace chaque <div class="art-card" ...> par :
+        <div class="art-card" data-category="perso" data-title="Titre" onclick="openLightbox(this)">
+          <img src="tes-images/dessin1.jpg" alt="Titre" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+      -->
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="art-card" data-category="perso" data-title="Illustration 01" onclick="openLightbox(this)">
+          <div class="placeholder-label"><div class="ph-icon"></div>Illustration 01</div>
+        </div>
+        <div class="art-card" data-category="fanart" data-title="Illustration 02" onclick="openLightbox(this)">
+          <div class="placeholder-label"><div class="ph-icon"></div>Illustration 02</div>
+        </div>
+        <div class="art-card" data-category="commission" data-title="Illustration 03" onclick="openLightbox(this)">
+          <div class="placeholder-label"><div class="ph-icon"></div>Illustration 03</div>
+        </div>
+        <div class="art-card" data-category="perso" data-title="Illustration 04" onclick="openLightbox(this)">
+          <div class="placeholder-label"><div class="ph-icon"></div>Illustration 04</div>
+        </div>
+        <div class="art-card" data-category="fanart" data-title="Illustration 05" onclick="openLightbox(this)">
+          <div class="placeholder-label"><div class="ph-icon"></div>Illustration 05</div>
+        </div>
+        <div class="art-card" data-category="commission" data-title="Illustration 06" onclick="openLightbox(this)">
+          <div class="placeholder-label"><div class="ph-icon"></div>Illustration 06</div>
+        </div>
+        <div class="art-card" data-category="perso" data-title="Illustration 07" onclick="openLightbox(this)">
+          <div class="placeholder-label"><div class="ph-icon"></div>Illustration 07</div>
+        </div>
+        <div class="art-card" data-category="fanart" data-title="Illustration 08" onclick="openLightbox(this)">
+          <div class="placeholder-label"><div class="ph-icon"></div>Illustration 08</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2026 Nekotsuki Studio. Tous droits réservés.
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+  <div class="lightbox-inner">
+    <div class="ph-icon-lg"></div>
+    <h3 id="lightboxTitle">Titre de l'œuvre</h3>
+    <p style="color:var(--text-dim); margin-top:10px; font-size:0.9rem;">Remplace ce placeholder par ta vraie image dans le HTML (voir commentaire dans la section galerie).</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boutique — Nekotsuki Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo-lockup">
+      <img src="logo-icon.png" alt="Nekotsuki Studio">
+      <span class="logo-text">Nekotsuki<small>STUDIO</small></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="apropos.html">À propos</a></li>
+      <li><a href="creations.html">Mes créations</a></li>
+      <li><a href="boutique.html" class="active">Boutique</a></li>
+      <li><a href="commissions.html">Commissions</a></li>
+      <li><a href="stream.html">Le coin stream</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main>
+  <div class="page-header">
+    <div class="container">
+      <a href="index.html" class="back-link">← Retour à l'accueil</a>
+    </div>
+  </div>
+
+  <section id="boutique">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Shop</span>
+        <h2>Boutique</h2>
+      </div>
+
+      <form class="ajax-form" id="orderForm" data-success-message="Commande envoyée ! Je te recontacte pour les modalités et le paiement." action="https://formspree.io/f/xvzeaeok" method="POST">
+        <input type="hidden" name="_subject" value="Nouvelle commande — Boutique Nekotsuki Studio">
+        <input type="text" name="_gotcha" style="display:none">
+
+        <div class="shop-grid">
+          <div class="shop-card">
+            <div class="shop-thumb"><div class="ph-icon"></div></div>
+            <div class="shop-info">
+              <span class="shop-badge">Print A4</span>
+              <h3>En cours...</h3>
+              <p>Description à venir...</p>
+              <div class="shop-price">?€</div>
+              <label class="shop-select">
+                <input type="checkbox" name="produits" value="Print — Lune de minuit (15€)">
+                <span>Ajouter à ma commande</span>
+              </label>
+            </div>
+          </div>
+          <div class="shop-card">
+            <div class="shop-thumb"><div class="ph-icon"></div></div>
+            <div class="shop-info">
+              <span class="shop-badge">Sticker</span>
+              <h3>En cours...</h3>
+              <p>Description à venir...</p>
+              <div class="shop-price">?€</div>
+              <label class="shop-select">
+                <input type="checkbox" name="produits" value="Sticker — Chat lunaire (4€)">
+                <span>Ajouter à ma commande</span>
+              </label>
+            </div>
+          </div>
+          <div class="shop-card">
+            <div class="shop-thumb"><div class="ph-icon"></div></div>
+            <div class="shop-info">
+              <span class="shop-badge">Original</span>
+              <h3>En cours...</h3>
+              <p>Description à venir...</p>
+              <div class="shop-price">?€</div>
+              <label class="shop-select">
+                <input type="checkbox" name="produits" value="Pièce originale — Veilleuse (80€)">
+                <span>Ajouter à ma commande</span>
+              </label>
+            </div>
+          </div>
+          <div class="shop-card">
+            <div class="shop-thumb"><div class="ph-icon"></div></div>
+            <div class="shop-info">
+              <span class="shop-badge">Print A3</span>
+              <h3>En cours...</h3>
+              <p>Description à venir...</p>
+              <div class="shop-price">?€</div>
+              <label class="shop-select">
+                <input type="checkbox" name="produits" value="Print — Jardin céleste (22€)">
+                <span>Ajouter à ma commande</span>
+              </label>
+            </div>
+          </div>
+          <div class="shop-card">
+            <div class="shop-thumb"><div class="ph-icon"></div></div>
+            <div class="shop-info">
+              <span class="shop-badge">Pack</span>
+              <h3>En cours...</h3>
+              <p>Description à venir...</p>
+              <div class="shop-price">?€</div>
+              <label class="shop-select">
+                <input type="checkbox" name="produits" value="Pack 5 stickers (16€)">
+                <span>Ajouter à ma commande</span>
+              </label>
+            </div>
+          </div>
+          <div class="shop-card">
+            <div class="shop-thumb"><div class="ph-icon"></div></div>
+            <div class="shop-info">
+              <span class="shop-badge">Digital</span>
+              <h3>En cours...</h3>
+              <p>Description à venir...</p>
+              <div class="shop-price">?€</div>
+              <label class="shop-select">
+                <input type="checkbox" name="produits" value="Pack de fonds d'écran (6€)">
+                <span>Ajouter à ma commande</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form order-details">
+          <h3 class="order-details-title">Finaliser ma commande</h3>
+          <div>
+            <label for="order-name">Nom</label>
+            <input type="text" id="order-name" name="name" placeholder="Ton nom" required>
+          </div>
+          <div>
+            <label for="order-email">Email</label>
+            <input type="email" id="order-email" name="email" placeholder="ton@email.com" required>
+          </div>
+          <div>
+            <label for="order-address">Adresse de livraison (pour les prints/stickers physiques)</label>
+            <input type="text" id="order-address" name="adresse" placeholder="Laisse vide pour les articles numériques">
+          </div>
+          <div>
+            <label for="order-notes">Précisions (quantités, couleurs, questions...)</label>
+            <textarea id="order-notes" name="notes" placeholder="Ex : 2x le pack de stickers, merci !"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="align-self:center;">Envoyer ma commande</button>
+          <div class="form-status"></div>
+          <p class="order-note">Aucun paiement n'est effectué ici — je te recontacte par email pour confirmer la disponibilité et organiser le règlement (virement, PayPal...).</p>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2026 Nekotsuki Studio. Tous droits réservés.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

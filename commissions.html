@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Commissions — Nekotsuki Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo-lockup">
+      <img src="logo-icon.png" alt="Nekotsuki Studio">
+      <span class="logo-text">Nekotsuki<small>STUDIO</small></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="apropos.html">À propos</a></li>
+      <li><a href="creations.html">Mes créations</a></li>
+      <li><a href="boutique.html">Boutique</a></li>
+      <li><a href="commissions.html" class="active">Commissions</a></li>
+      <li><a href="stream.html">Le coin stream</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main>
+  <div class="page-header">
+    <div class="container">
+      <a href="index.html" class="back-link">← Retour à l'accueil</a>
+    </div>
+  </div>
+
+  <section id="commissions">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Services</span>
+        <h2>Commissions</h2>
+        <p>Quatre univers, quatre façons de collaborer.</p> <p>Clique sur un bloc pour voir le détail des formules et des tarifs.</p>
+      </div>
+
+      <div class="comm-category-grid">
+        <button type="button" class="comm-category-card" onclick="openCommModal('discord')">
+          <span class="comm-category-icon">💬</span>
+          <h3>Discord</h3>
+          <p>Emotes, identité visuelle et serveur complet — à partir de 40€</p>
+        </button>
+        <button type="button" class="comm-category-card" onclick="openCommModal('twitch')">
+          <span class="comm-category-icon">🎮</span>
+          <h3>Twitch</h3>
+          <p>Emotes et habillage de stream — à partir de 30€</p>
+        </button>
+        <button type="button" class="comm-category-card" onclick="openCommModal('minecraft')">
+          <span class="comm-category-icon">⛏️</span>
+          <h3>Minecraft</h3>
+          <p>Textures, GUI, logos et assets sur mesure — devis personnalisé</p>
+        </button>
+        <button type="button" class="comm-category-card" onclick="openCommModal('perso')">
+          <span class="comm-category-icon">🎨</span>
+          <h3>Réalisations personnelles</h3>
+          <p>Illustrations, logos, concepts et créations sur mesure — devis personnalisé</p>
+        </button>
+      </div>
+
+      <div class="comm-terms">
+        <h3><u>Conditions</u></h3>
+        <ol>
+          <li>Paiement à 50% avant de commencer, solde à la livraison.</li>
+          <li>Délai moyen : 1 à 3 semaines selon la charge de travail.</li>
+          <li>Usage personnel inclus. Usage commercial sur demande (supplément).</li>
+          <li>Je me réserve le droit de refuser certains contenus.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2026 Nekotsuki Studio. Tous droits réservés.
+</footer>
+
+<!-- MODALE DISCORD -->
+<div class="comm-modal" id="modal-discord">
+  <div class="comm-modal-inner">
+    <button class="comm-modal-close" onclick="closeCommModal('discord')" aria-label="Fermer">&times;</button>
+    <div class="comm-modal-head">
+      <span class="comm-modal-icon">💬</span>
+      <h3>Discord</h3>
+    </div>
+    <div class="comm-sub-grid">
+      <div class="comm-sub-card">
+        <span class="comm-sub-emoji">🌙</span>
+        <h4>Pack Emotes</h4>
+        <div class="comm-sub-price">À partir de 40€</div>
+        <ul>
+          <li>Jusqu'à 24 émotes personnalisées</li>
+          <li>Format Discord</li>
+          <li>Fond transparent</li>
+        </ul>
+      </div>
+      <div class="comm-sub-card">
+        <span class="comm-sub-emoji">🌕</span>
+        <h4>Pack Identité Discord</h4>
+        <div class="comm-sub-price">À partir de 100€</div>
+        <ul>
+          <li>Logo personnalisé</li>
+          <li>Bannière du serveur</li>
+          <li>Jusqu'à 40 émotes</li>
+          <li>Icône du serveur</li>
+          <li>Cohérence graphique complète</li>
+        </ul>
+      </div>
+      <div class="comm-sub-card">
+        <span class="comm-sub-emoji">🌑</span>
+        <h4>Pack Serveur Complet</h4>
+        <div class="comm-sub-price">À partir de 150€</div>
+        <p class="comm-sub-desc">Création complète de l'identité visuelle et du serveur Discord :</p>
+        <ul>
+          <li>Logo</li>
+          <li>Bannière</li>
+          <li>Émotes</li>
+          <li>Icônes</li>
+          <li>Éléments graphiques</li>
+          <li>Design des salons et catégories</li>
+          <li>Accompagnement personnalisé</li>
+        </ul>
+      </div>
+      <div class="comm-sub-card comm-sub-custom">
+        <span class="comm-sub-emoji">✨</span>
+        <h4>Projet sur mesure</h4>
+        <div class="comm-sub-price">Prix personnalisé</div>
+        <p class="comm-sub-desc">Chaque projet est unique. Un devis détaillé est établi gratuitement selon vos besoins.</p>
+        <p class="comm-sub-desc">Vous avez une demande particulière ? Je réalise également des projets entièrement personnalisés adaptés à vos besoins.</p>
+      </div>
+    </div>
+    <a href="contact.html" class="btn btn-primary comm-modal-cta">Demander un devis</a>
+  </div>
+</div>
+
+<!-- MODALE TWITCH -->
+<div class="comm-modal" id="modal-twitch">
+  <div class="comm-modal-inner">
+    <button class="comm-modal-close" onclick="closeCommModal('twitch')" aria-label="Fermer">&times;</button>
+    <div class="comm-modal-head">
+      <span class="comm-modal-icon">🎮</span>
+      <h3>Twitch</h3>
+    </div>
+    <div class="comm-sub-grid">
+      <div class="comm-sub-card">
+        <span class="comm-sub-emoji">🌙</span>
+        <h4>Pack Emotes</h4>
+        <div class="comm-sub-price">À partir de 30€</div>
+        <ul>
+          <li>Émotes personnalisées</li>
+          <li>Livraison prête à l'utilisation</li>
+        </ul>
+      </div>
+      <div class="comm-sub-card">
+        <span class="comm-sub-emoji">🌕</span>
+        <h4>Pack Stream</h4>
+        <div class="comm-sub-price">À partir de 100€</div>
+        <ul>
+          <li>Overlay</li>
+          <li>Écran de démarrage</li>
+          <li>Écran de pause</li>
+          <li>Écran de fin</li>
+          <li>Panels</li>
+          <li>Cohérence graphique</li>
+        </ul>
+      </div>
+      <div class="comm-sub-card comm-sub-custom">
+        <span class="comm-sub-emoji">✨</span>
+        <h4>Projet sur mesure</h4>
+        <div class="comm-sub-price">Prix personnalisé</div>
+        <p class="comm-sub-desc">Chaque projet est unique. Un devis détaillé est établi gratuitement selon vos besoins.</p>
+        <p class="comm-sub-desc">Pour un branding complet ou toute demande spécifique.</p>
+      </div>
+    </div>
+    <a href="contact.html" class="btn btn-primary comm-modal-cta">Demander un devis</a>
+  </div>
+</div>
+
+<!-- MODALE MINECRAFT -->
+<div class="comm-modal" id="modal-minecraft">
+  <div class="comm-modal-inner">
+    <button class="comm-modal-close" onclick="closeCommModal('minecraft')" aria-label="Fermer">&times;</button>
+    <div class="comm-modal-head">
+      <span class="comm-modal-icon">⛏️</span>
+      <h3>Minecraft</h3>
+    </div>
+    <div class="comm-sub-grid comm-sub-grid-single">
+      <div class="comm-sub-card">
+        <span class="comm-sub-emoji">🎨</span>
+        <h4>Ressources personnalisées</h4>
+        <div class="comm-sub-price">Prix personnalisé</div>
+        <p class="comm-sub-desc">Chaque projet est unique. Un devis détaillé est établi gratuitement selon vos besoins.</p>
+        <p class="comm-sub-desc">Création de contenus graphiques adaptés à votre serveur :</p>
+        <ul>
+          <li>Textures</li>
+          <li>Icônes</li>
+          <li>GUI</li>
+          <li>Items</li>
+          <li>Logos</li>
+          <li>Illustrations</li>
+          <li>Interfaces</li>
+          <li>Assets personnalisés</li>
+        </ul>
+        <p class="comm-sub-desc">Chaque projet étant unique, un devis est réalisé en fonction de vos besoins.</p>
+      </div>
+    </div>
+    <a href="contact.html" class="btn btn-primary comm-modal-cta">Demander un devis</a>
+  </div>
+</div>
+
+<!-- MODALE RÉALISATIONS PERSONNELLES -->
+<div class="comm-modal" id="modal-perso">
+  <div class="comm-modal-inner">
+    <button class="comm-modal-close" onclick="closeCommModal('perso')" aria-label="Fermer">&times;</button>
+    <div class="comm-modal-head">
+      <span class="comm-modal-icon">🎨</span>
+      <h3>Réalisations personnelles</h3>
+    </div>
+    <div class="comm-sub-grid comm-sub-grid-single">
+      <div class="comm-sub-card">
+        <span class="comm-sub-emoji">✨</span>
+        <h4>Création sur mesure</h4>
+        <div class="comm-sub-price">Prix personnalisé</div>
+        <p class="comm-sub-desc">Chaque projet est unique. Un devis détaillé est établi gratuitement selon vos besoins.</p>
+        <p class="comm-sub-desc">Illustrations, affiches, logos, personnages, concepts, tatouages, identités visuelles ou toute autre création graphique.</p>
+        <p class="comm-sub-desc">Chaque projet fait l'objet d'un devis personnalisé selon :</p>
+        <ul>
+          <li>La complexité</li>
+          <li>Le temps de réalisation</li>
+          <li>Les droits d'utilisation</li>
+          <li>Les livrables souhaités</li>
+        </ul>
+      </div>
+    </div>
+    <a href="contact.html" class="btn btn-primary comm-modal-cta">Demander un devis</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

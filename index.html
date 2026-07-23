@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nekotsuki Studio — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo-lockup">
+      <img src="logo-icon.png" alt="Nekotsuki Studio">
+      <span class="logo-text">Nekotsuki<small>STUDIO</small></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="apropos.html">À propos</a></li>
+      <li><a href="creations.html">Mes créations</a></li>
+      <li><a href="boutique.html">Boutique</a></li>
+      <li><a href="commissions.html">Commissions</a></li>
+      <li><a href="stream.html">Le coin stream</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main>
+  <!-- PAGE DE GARDE -->
+  <section class="cover">
+    <div class="brand-mark">
+      <img src="logo-icon.png" alt="Nekotsuki Studio">
+    </div>
+    <p class="cover-tagline">Un univers où chaque création raconte une histoire.<br> Graphiste & Artiste indépendante.<br> Chaque design est conçu sur mesure pour révéler l'essence de votre projet.</p>
+  </br>
+    <div class="nav-tiles">
+      <!--
+        ICÔNE "À PROPOS" (badge chat + lune) : enregistre l'image sous le nom exact "icon-apropos.png"
+        à côté de index.html, EN ÉCRASANT le fichier existant, pour qu'elle remplace l'ancienne icône.
+      -->
+      <a class="nav-tile" href="apropos.html">
+        <div class="tile-icon tile-icon-img"><img src="icon-apropos.png" alt="À propos" onerror="this.parentElement.textContent='Ap'; this.parentElement.classList.remove('tile-icon-img');"></div>
+        <h3>À propos</h3>
+      </a>
+      <!--
+        ICÔNE "MES CRÉATIONS" (badge palette + pinceau/plume/crayon) : enregistre sous le nom exact
+        "icon-creations.png", en écrasant le fichier existant.
+      -->
+      <a class="nav-tile" href="creations.html">
+        <div class="tile-icon tile-icon-img"><img src="icon-creations.png" alt="Mes créations" onerror="this.parentElement.textContent='Cr'; this.parentElement.classList.remove('tile-icon-img');"></div>
+        <h3>Mes créations</h3>
+      </a>
+      <!--
+        ICÔNE "BOUTIQUE" (badge sac + cristaux) : enregistre sous le nom exact "icon-boutique.png",
+        en écrasant le fichier existant.
+      -->
+      <a class="nav-tile" href="boutique.html">
+        <div class="tile-icon tile-icon-img"><img src="icon-boutique.png" alt="Boutique" onerror="this.parentElement.textContent='Bo'; this.parentElement.classList.remove('tile-icon-img');"></div>
+        <h3>Boutique</h3>
+      </a>
+      <!--
+        ICÔNE "COMMISSIONS" (badge parchemin + panier + plume + sceau) : enregistre sous le nom exact
+        "icon-commissions.png", en écrasant le fichier existant.
+      -->
+      <a class="nav-tile" href="commissions.html">
+        <div class="tile-icon tile-icon-img"><img src="icon-commissions.png" alt="Commissions" onerror="this.parentElement.textContent='Co'; this.parentElement.classList.remove('tile-icon-img');"></div>
+        <h3>Commissions</h3>
+      </a>
+      <!--
+        ICÔNE "LE COIN STREAM" (badge micro + fenêtre Twitch) : enregistre sous le nom exact
+        "icon-stream.png", en écrasant le fichier existant.
+      -->
+      <a class="nav-tile" href="stream.html">
+        <div class="tile-icon tile-icon-img"><img src="icon-stream.png" alt="Le coin stream" onerror="this.parentElement.textContent='St'; this.parentElement.classList.remove('tile-icon-img');"></div>
+        <h3>Le coin stream</h3>
+      </a>
+      <!--
+        ICÔNE "CONTACT" (badge enveloppe + lettre + sceau) : enregistre sous le nom exact
+        "icon-contact.png", en écrasant le fichier existant.
+      -->
+      <a class="nav-tile" href="contact.html">
+        <div class="tile-icon tile-icon-img"><img src="icon-contact.png" alt="Contact" onerror="this.parentElement.textContent='Ct'; this.parentElement.classList.remove('tile-icon-img');"></div>
+        <h3>Contact</h3>
+      </a>
+    </div>
+  </section>
+
+<footer>
+  © 2026 Nekotsuki Studio. Tous droits réservés.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
